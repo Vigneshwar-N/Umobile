@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { colors } from '../../constants/colors';
 import images from '../../assets/imageMap';
@@ -31,8 +31,8 @@ import { hs, vs } from '../../utility/responsive';
  * @property {string} [tintColor] - Tint color for the image inside the image button.
  */
 
-/** @extends {React.Component<ButtonProps>} */
-export default class Button extends Component {
+/** @extends {React.PureComponent<ButtonProps>} */
+export default class Button extends PureComponent {
   render() {
     const {
       disabled,

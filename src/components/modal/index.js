@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Text, View, Modal, Image, StatusBar, StyleSheet } from 'react-native';
 import Spacer from '../spacer';
 import CustomText from '../customText';
@@ -13,8 +13,8 @@ import { vs, hs } from '../../utility/responsive';
  * @property {() => void} onImagePress - Callback when the "OK" button is pressed.
  */
 
-/** @extends {React.Component<CustomModalProps>} */
-export default class CustomModal extends Component {
+/** @extends {React.PureComponent<CustomModalProps>} */
+export default class CustomModal extends PureComponent {
   render() {
     const { visible, onImagePress } = this.props;
 

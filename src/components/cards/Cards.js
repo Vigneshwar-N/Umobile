@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { PureComponent } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import images from '../../assets/imageMap';
 import { colors } from '../../constants/colors';
@@ -26,7 +26,7 @@ import { styles } from './styles';
  * @property {string} [selectedPayment] - Currently selected payment option name.
  */
 
-export default class CustomCards extends Component {
+export default class CustomCards extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {

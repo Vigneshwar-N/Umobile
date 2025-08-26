@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { View } from 'react-native';
 import { vs, hs } from '../../utility/responsive';
 
@@ -8,8 +8,8 @@ import { vs, hs } from '../../utility/responsive';
  * @property {number} [width] - Optional width for horizontal spacing.
  */
 
-/** @extends {React.Component<SpacerProps>} */
-export default class Spacer extends Component {
+/** @extends {React.PureComponent<SpacerProps>} */
+export default class Spacer extends PureComponent {
   render() {
     const { width = 0, height = 0 } = this.props;
     return <View style={{ width: hs(width), height: vs(height) }} />;

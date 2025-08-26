@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Text } from 'react-native';
 import { colors } from '../../constants/colors';
 import { fs } from '../../utility/responsive';
@@ -13,8 +13,8 @@ import { fs } from '../../utility/responsive';
  * @property {number} [flex] - Flex property for layout control.
  */
 
-/** @extends {React.Component<CustomTextProps>} */
-export default class CustomText extends Component {
+/** @extends {React.PureComponent<CustomTextProps>} */
+export default class CustomText extends PureComponent {
   render() {
     const {
       text,

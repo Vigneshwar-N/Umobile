@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { PureComponent } from 'react';
 import { FlatList } from 'react-native';
 import CustomCards from '../../components/cards/Cards';
 import Spacer from '../../components/spacer';
@@ -16,8 +16,8 @@ import { setSelectedPayment } from '../../redux/actions/action';
  * @property {boolean} [isArrowDown] - Global arrow down toggle from Redux (unused locally).
  */
 
- /** @extends {Component<PaymentSectionProps>} */
-class PaymentSection extends Component {
+ /** @extends {PureComponent<PaymentSectionProps>} */
+class PaymentSection extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

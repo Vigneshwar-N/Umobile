@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { StyleSheet } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import { colors } from '../../constants/colors';
@@ -9,9 +9,9 @@ import { colors } from '../../constants/colors';
  * @property {string} [backgroundColor] - Background color for the safe area.
  */
 
-/** @extends {React.Component<SafeAreaProps>} */
+/** @extends {React.PureComponent<SafeAreaProps>} */
 
-export default class SafeArea extends Component {
+export default class SafeArea extends PureComponent {
   render() {
     const { children,backgroundColor=colors.black} = this.props;
     return (

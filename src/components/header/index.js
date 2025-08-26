@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Button from '../customButton';
 import CustomText from '../customText';
@@ -23,8 +23,8 @@ import { vs, hs } from '../../utility/responsive';
  * @property {() => void} [onImagePress] - Callback when left image icon is pressed.
  */
 
-/** @extends {React.Component<HeaderProps>} */
-export default class Header extends Component {
+/** @extends {React.PureComponent<HeaderProps>} */
+export default class Header extends PureComponent {
   render() {
     const {
       type = 1,

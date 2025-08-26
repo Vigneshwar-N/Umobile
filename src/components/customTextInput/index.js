@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { PureComponent } from 'react';
 import { StyleSheet, TextInput, View, FlatList } from 'react-native';
 import Button from '../customButton';
 import CustomText from '../customText';
@@ -26,8 +26,8 @@ import { vs, hs } from '../../utility/responsive';
  * @property {() => void} [handleSearch] - Callback when search icon pressed.
  */
 
-/** @extends {Component<CustomTextInputProps>} */
-export default class CustomTextInput extends Component {
+/** @extends {PureComponent<CustomTextInputProps>} */
+export default class CustomTextInput extends PureComponent {
   render() {
     const {
       type = 1,

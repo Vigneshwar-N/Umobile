@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { ScrollView, StatusBar, StyleSheet } from 'react-native';
 import { colors } from '../../constants/colors';
 import SafeArea from '../../components/CustomSafeArea';
@@ -24,8 +24,8 @@ import { hs } from '../../utility/responsive';
  * @property {(price: number) => void} setLastRecharge - Redux action to set last recharge price.
  */
 
-/** @extends {React.Component<PaymentProps>} */
-class Payment extends Component {
+/** @extends {React.PureComponent<PaymentProps>} */
+class Payment extends PureComponent {
   handleImagePress = () => {
     this.props.setToggleModalVisible(false);
     this.props.setSelectedPayment('');
